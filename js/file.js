@@ -7,6 +7,14 @@ let score = document.querySelector("#score");
 let gameOver = document.querySelector("#gameOver");
 let started = document.querySelector("#started");
 
+var music = new Audio("assets/music.wav");
+music.loop = true;
+music.play();
+
+var jumpSFX = new Audio("assets/jump.mp3");
+
+var crashSFX = new Audio("assets/crash.wav");
+
 //declaring variable for score
 let interval = null;
 let playerScore = 0;
@@ -24,6 +32,8 @@ let scoreCounter = () => {
 window.addEventListener("keydown", (start) => {
     //    console.log(start);
     if (start.code == "Space" && active) {
+        music.play();
+        crashSFX.pause();
         started.style.display = "none";
         gameOver.style.display = "none";
         block.classList.add("blockActive");
@@ -52,6 +62,8 @@ window.addEventListener("keydown", (e) => {
             setTimeout(() => {
                 bot.classList.remove("botActive");
             }, 500);
+
+            jumpSFX.play();
         }
 });
 
@@ -75,5 +87,9 @@ let result = setInterval(() => {
         point=0;
 
         active = true;
+
+        music.pause();
+
+        crashSFX.play();
     }
 }, 10);
