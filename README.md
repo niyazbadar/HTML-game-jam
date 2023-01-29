@@ -6,9 +6,9 @@
 </div>
 
 <div align="center">
-    <h6>
+    <h4>
         "Cyber Road" is an exciting and challenging endless robot jumping game, created by a team of three. In the game, you control a robot and must navigate through an endless series of barriers. The twist? The game is designed to raise awareness and support for important social causes. With each successful jump, you'll not only be entertained, but you'll also be contributing to a better world. So why not challenge your friends and see who can jump the farthest, all while making a positive impact!
-    </h6>
+    </h4>
 </div>
 
 <br>
