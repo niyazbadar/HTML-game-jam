@@ -18,7 +18,7 @@ body {
     overflow: hidden;
 }
 
-#container #dino {
+#container #bot {
     height: 70px;
     width: 70px;
     position: absolute;
@@ -26,16 +26,16 @@ body {
     left: 20px;
 }
 
-#container #dino img {
+#container #bot img {
     height: 70px;
     width: 70px;
 }
 
-.dinoActive {
-    animation: animateDino 0.5s linear infinite;
+.botActive {
+    animation: animatebot 0.5s linear infinite;
 }
 
-@keyframes animateDino {
+@keyframes animatebot {
 
     0%,
     100% {
