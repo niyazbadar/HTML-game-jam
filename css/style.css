@@ -144,3 +144,9 @@ body {
     height: 80px;
     color: #525252;
 }
+
+#started {
+    display: block;
+    font-size: 70px;
+    color: #525252;
+}
